@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+/* back to top */
+#button {
+    display: inline-block;
+    background-color: #FBEAD0;
+    width: 60px;
+    min-height: 60px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button i{
+    font-size: 35px;
+    margin: auto;
+    color: black;
+    margin-top: 12px;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #03a9f4;
+  }
+  #button:active {
+    background-color: #FBEAD0;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+/* header */
+.header1 {
+    background-color: #FBEAD0;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    background-color: black;
+    min-height: 13vh;
+}
+
+.navbar-toggler-icon {
+    color: red;
+}
+
+.navbar-brand {
+    img {
+        width: 100px;
+        height: 70px;
+    }
+}
+
+.nav-item a {
+    color: white;
+}
+.nav-link{
+    background-color: black;
+    border: 2px solid #FBEAD0;
+    border-radius: 10px;
+}
+.nav-link:hover {
+    background-color: #FBEAD0;
+    color: black;
+    box-shadow: 2px 2px 5px white;
+    border-radius: 10px;
+}
+
+.ic {
+    color: #FBEAD0;
+
+}
+
+
+/* slider */
+.carousel-control-next-icon {
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.carousel-control-prev-icon {
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: black;
+}
+
+/* slider2 */
+.slider2 {
+    width: 100%;
+    height: 65vh;
+    background-color: black;
+}
+
+.hed p {
+    color: #FBEAD0;
+    text-align: center;
+    padding: 20px;
+    font-size: 4vw;
+}
+
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: 40vh;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 35vh;
+    position: relative;
+}
+
+.slick-slide img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.slide1 img:hover {
+    border: 4px solid #FBEAD0;
+    opacity: 0.7;
+}
+
+/* top product */
+.topproduct {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.btn_2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    button {
+        min-width: 10%;
+        min-height: 7vh;
+        background-color: #343434;
+        color: white;
+        font-weight: 500;
+    }
+}
+
+.btn_2 button:hover {
+    background-color: #FBEAD0;
+    color: black;
+}
+
+/* watch */
+.watch {
+    width: 100%;
+    min-height: 150vh;
+    background-color: black;
+}
+
+.main_1 {
+    width: 90%;
+    min-height: 65vh;
+}
+
+.watch_img {
+    width: 98%;
+    min-height: 50vh;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.watch_img1 {
+    background-image: url(imges/watch1.png);
+}
+
+.watch_img2 {
+    background-image: url(imges/watch2.png);
+}
+
+.watch_img3 {
+    background-image: url(imges/watch3.png);
+}
+
+.watch_img4 {
+    background-image: url(imges/watch4.png);
+}
+
+.watch_img5 {
+    background-image: url(imges/watch5.png);
+}
+
+.watch_img6 {
+    background-image: url(imges/watch6.png);
+}
+
+.watch_img7 {
+    background-image: url(imges/watch7.png);
+}
+
+.watch_img8 {
+    background-image: url(imges/watch8.png);
+}
+
+.watch_img:hover {
+    border: 2px solid #FBEAD0;
+}
+
+.bac {
+    height: 20vh;
+    background-color: white;
+    opacity: 0.4;
+    transition: all 0.8s linear;
+
+}
+
+.watch_img:hover .bac {
+    height: 50vh;
+}
+
+.ic_2 i {
+    border: 2px solid #FBEAD0;
+    padding: 7px;
+
+}
+
+.ic_2 {
+    font-size: 30px;
+    background-color: transparent;
+    position: absolute;
+    bottom: -30%;
+    color: white;
+    transition: all 0.8s linear;
+}
+
+.watch_img:hover .ic_2 {
+    bottom: 5%;
+}
+
+.watch_type {
+    width: 100%;
+    height: 15vh;
+
+    h4 {
+        color: white;
+    }
+}
+
+.ic_3 {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    margin: 7px;
+
+    i {
+        color: #fec60f;
+
+    }
+}
+
+/* our offers */
+.ouroffers {
+    width: 100%;
+    min-height: 115vh;
+    background-color: black;
+    overflow-x: hidden;
+
+}
+
+.ouroffersimg {
+    min-height: 60vh;
+    position: relative;
+}
+
+.imges1 {
+    background-image: url(imges/ouroffersimg.png);
+}
+
+.imges2 {
+    background-image: url(imges/ouroffers\ img.png);
+}
+
+.imges1:hover {
+    opacity: 0.6;
+}
+
+.imges2:hover {
+    opacity: 0.6;
+}
+
+.upto {
+    width: 150px;
+    height: 150px;
+    border: 3px dotted #FBEAD0;
+    border-radius: 20px;
+    position: absolute;
+    top: 7%;
+    left: 7%;
+
+    h2 {
+        color: white;
+        text-align: center;
+        margin-top: 25px;
+    }
+}
+
+.ic_type {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.fas i {
+    font-size: 45px;
+    color: white;
+    transition: all 0.2s linear;
+}
+
+.text {
+    h4 {
+        color: white;
+    }
+
+    p {
+        color: #d7d7d7a1;
+    }
+}
+
+.text h4:hover {
+    color: #FBEAD0;
+}
+
+.fas i:hover {
+    color: #FBEAD0;
+    transform: rotateY(180deg)
+}
+
+/* join our newletter */
+
+.photos_1 {
+    background: url(https://cdn.wallpapersafari.com/97/13/oA2Nl5.jpg);
+    width: 100%;
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.newsletter {
+    min-height: 35vh;
+    min-width: 40%;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+
+    h1 {
+        color: #FBEAD0;
+        text-align: center;
+    }
+
+    p {
+        color: #fff;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    input {
+        min-width: 100%;
+        height: 7vh;
+        font-size: 20px;
+        background-color: rgba(0, 0, 0, 0.547);
+        color: white;
+        border: 2px solid #FBEAD0;
+        overflow: hidden;
+    }
+
+    button{
+        position: absolute;
+        left: 30%;
+        border: 2px solid #FBEAD0;
+        width: 30%;
+        min-height: 6vh;
+        background-color: #FBEAD0;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+.newsletter button:hover {
+    background-color: #343434;
+    border: 2px solid #FBEAD0;
+    color: white;
+}
+/* latest blog */
+.latestblog{
+    width: 100%;
+    min-height: 90vh;
+    background-color: black;
+    
+}
+.card-body{
+    background-color: #343434;
+}
+.blogcard{
+    display: flex;
+    justify-content: space-around;
+}
+.bloghed{
+    color: #FBEAD0;
+    display: flex;
+    justify-content: space-between;
+}
+.blogtital{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+.bloglorem{
+    color: #ffffffa1;
+    display: flex;
+    justify-content: center;
+}
+.readmore{
+    color: #FBEAD0;
+    display: flex;
+    justify-content: flex-end;
+    h5{
+        border-bottom: 3px solid #FBEAD0;
+    }
+}
+/* footer */
+.footer{
+    width: 100%;
+    min-height: 80vh;
+    background-color: #343434;
+}
+.foot{
+    width: 100%;
+    min-height: 40vh;
+}
+.foot h4{
+    color: #FBEAD0;
+    font-size: 30px;
+}
+.foot ul li{
+    color: white;
+    list-style: none;
+    margin: 10px;
+    font-size: 20px;
+}
+.foot ul li:hover{
+    color: #FBEAD0;
+}
+.fac i:hover{
+    color: #FBEAD0;
+}
+.fac i{
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+}
+.end h5{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
